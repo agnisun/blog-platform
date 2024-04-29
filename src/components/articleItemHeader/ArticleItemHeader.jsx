@@ -38,7 +38,7 @@ export function ArticleItemHeader({ article, disableLink }) {
 					{!isPending && !isError && (
 						<button type="button" className="article__header-likes" onClick={handleLike}>
 							{isFavorited ? <HeartFilled style={{ color: "#FF0707" }} /> : <HeartOutlined />}
-							<span>{article.favoritesCount + Boolean(isFavorited)}</span>
+							<span>{article.favoritesCount - Boolean(article.favorited) + Boolean(isFavorited)}</span>
 						</button>
 					)}
 				</div>
