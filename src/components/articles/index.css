@@ -1,0 +1,131 @@
+.articles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.articles__list {
+	padding: 20px 15px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 25px;
+	list-style: none;
+	align-self: center;
+}
+
+.articles__list-item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border-radius: 5px;
+	background: rgb(255, 255, 255);
+	padding: 15px 20px;
+}
+
+.article__link {
+	color: inherit;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.article__header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "info info info user";
+	gap: 10px;
+}
+
+.article__header-info {
+	grid-area: info;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.article__header-info__group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.article__header-title {
+	margin: 0;
+	color: rgb(24, 144, 255);
+	font-size: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.article__header-likes {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+}
+
+.article__header-tags {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow-x: auto;
+	display: flex;
+	gap: 8px;
+}
+
+.article__header-tags__tag {
+	color: rgba(0, 0, 0, 1);
+	border: 1px solid rgba(0, 0, 0, 1);
+	font-size: 12px;
+	border-radius: 2px;
+	overflow: hidden;
+	height: 20px;
+	padding: 2px 5px;
+	cursor: pointer;
+	background-color: transparent;
+
+	&:hover {
+		color: rgba(0, 0, 0, 0.5);
+		border: 1px solid rgba(0, 0, 0, 0.5);
+	}
+}
+
+.article__header-profile {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-self: flex-end;
+}
+
+.article__header-profile__user {
+	grid-area: user;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.article__header-profile__name {
+	color: rgba(0, 0, 0, 0.85);
+	font-size: 18px;
+	margin: 0;
+}
+
+.article__header-profile__date {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.article__text {
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}

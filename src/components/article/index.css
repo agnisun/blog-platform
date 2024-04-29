@@ -1,0 +1,22 @@
+.page--article {
+	padding: 20px 0 60px;
+}
+
+.article {
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+	padding: 15px;
+	background-color: #fff;
+}
+
+.article__description {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+}
+
+.article__edit,
+.article__edit-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+}

@@ -1,0 +1,67 @@
+body {
+	background: rgb(235, 238, 243);
+	line-height: 1.5;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px;
+	width: 100%;
+}
+
+.create {
+	font-size: 14px;
+	min-width: 110px;
+	color: rgb(82, 196, 26) !important;
+	border: 1px solid rgb(82, 196, 26);
+	border-radius: 5px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logout {
+	color: rgba(0, 0, 0, 0.75);
+	font-size: 18px;
+	border: 1px solid rgba(0, 0, 0, 0.75);
+	border-radius: 5px;
+	min-width: 110px;
+	height: 50px;
+}
+
+.logout--green {
+	color: rgb(82, 196, 26);
+	border: 1px solid rgb(82, 196, 26);
+}
+
+.signin {
+	color: rgba(0, 0, 0, 0.85);
+	font-size: 18px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	min-width: 110px;
+	height: 50px;
+}
+
+.error {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+.create-tag {
+	border: 1px solid rgb(24, 144, 255);
+	border-radius: 4px;
+	height: 40px;
+	width: 130px;
+}
+
+.create-tag--delete {
+	color: rgb(245, 34, 45);
+	border: 1px solid rgb(245, 34, 45);
+
+	&:hover {
+		color: rgba(245, 34, 45, 0.7) !important;
+	}
+}
