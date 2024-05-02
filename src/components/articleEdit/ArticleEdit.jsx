@@ -27,15 +27,17 @@ export function ArticleEdit() {
 
 	const mutation = useMutation({
 		mutationFn: (article) =>
-			axios.put(
-				`https://blog.kata.academy/api/articles/${slug}`,
-				{ article },
-				{
-					headers: {
-						Authorization: `Token ${token}`,
-					},
-				}
-			),
+			axios
+				.put(
+					`https://blog.kata.academy/api/articles/${slug}`,
+					{ article },
+					{
+						headers: {
+							Authorization: `Token ${token}`,
+						},
+					}
+				)
+				.then(() => navigate("/")),
 	});
 
 	const {

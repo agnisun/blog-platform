@@ -1,1 +1,1 @@
-https://blog-platform-mbdl4xzps-kirinayiks-projects.vercel.app/
+https://blog-platform-ke5uh7t1b-kirinayiks-projects.vercel.app/

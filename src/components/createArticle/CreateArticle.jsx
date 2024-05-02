@@ -17,15 +17,17 @@ export function CreateArticle() {
 
 	const mutation = useMutation({
 		mutationFn: (article) =>
-			axios.post(
-				"https://blog.kata.academy/api/articles",
-				{ article },
-				{
-					headers: {
-						Authorization: `Token ${token}`,
-					},
-				}
-			),
+			axios
+				.post(
+					"https://blog.kata.academy/api/articles",
+					{ article },
+					{
+						headers: {
+							Authorization: `Token ${token}`,
+						},
+					}
+				)
+				.then(() => navigate("/")),
 	});
 
 	const {
